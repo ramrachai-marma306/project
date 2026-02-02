@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #020617, #020024);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4da3ff;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* same hover for Login & Signup */
+.btn-outline {
+    padding: 8px 20px;
+    border: 1px solid #4da3ff;
+    border-radius: 20px;
+}
+
+.btn-outline:hover {
+    background: #4da3ff;
+    color: #000;
+    box-shadow: 0 0 15px #4da3ff;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    padding: 120px 60px;
+}
+
+.hero-text {
+    max-width: 700px;
+    animation: slideLeft 1.2s ease;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.hero-text h2 span {
+    color: #4da3ff;
+}
+
+.hero-text p {
+    margin-top: 30px;
+    line-height: 1.8;
+    color: #cbd5e1;
+    font-size: 17px;
+}
+
+/* ================= BUTTON ================= */
+
+.btn-primary {
+    margin-top: 40px;
+    padding: 15px 35px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #4da3ff, #2563eb);
+    color: #fff;
+    transition: 0.4s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(77, 163, 255, 0.5);
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
